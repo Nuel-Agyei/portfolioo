@@ -1,8 +1,4 @@
-import React from 'react'
 import CircularText from './CircularText/CircularText'
-
-
-type Props = {}
 
 const Landing = () => {
   return (
