@@ -12,7 +12,7 @@ const IntroScreen: React.FC<IntroScreenProps> = ({ onComplete }) => {
   useEffect(() => {
     // Animate out after 3 seconds
     const tl = gsap.timeline({
-      delay: 3,
+      delay: 5,
       onComplete: onComplete,
     });
 
@@ -27,22 +27,25 @@ const IntroScreen: React.FC<IntroScreenProps> = ({ onComplete }) => {
   return (
     <div
       ref={introRef}
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black text-white"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black text-white px-4"
     >
-      <div className='w-2/3' style={{position: 'relative',}}>
-        <TextPressure
-            text="Hey There!"
-            flex={true}
-            alpha={true}
-            stroke={false}
-            width={true}
-            weight={true}
-            italic={true}
-            textColor="#ffffff"
-            strokeColor="#ff0000"
-            minFontSize={144}
-        />
-</div>
+      <div
+      className="w-full max-w-xl mx-auto"
+      style={{ position: 'relative' }}
+      >
+      <TextPressure
+        text="Hey There!"
+        flex={true}
+        alpha={true}
+        stroke={false}
+        width={true}
+        weight={true}
+        italic={true}
+        textColor="#ffffff"
+        strokeColor="#ff0000"
+        minFontSize={48}
+      />
+      </div>
     </div>
   );
 };
