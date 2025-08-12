@@ -1,2 +1,11 @@
 @import 'tailwindcss';
 
+body{
+    background-color: rgb(22, 22, 21);
+}
+
+.custom-class {
+    color: #ffffff; /* Example color */
+    font-size:56px; /* Example size */
+    text-shadow: 0 0 10px rgba(23, 255, 243, 0.5); /* Example shadow */
+}
